@@ -1,5 +1,6 @@
 import NavBar from './components/NavBar'
 import PortfolioPage from './components/Hero'
+import Aboutme from './components/aboutme'
 
 
 function App() {
@@ -9,6 +10,7 @@ function App() {
     <>
     <NavBar />
     <PortfolioPage />
+    <Aboutme />
     </>
   )
 }

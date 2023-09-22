@@ -3,4 +3,38 @@
 @tailwind utilities;
 
 
+
+
+/* Define the animation keyframes */
+/* Container for the scrolling list */
+.wrapper {
+    overflow: hidden;
+  }
+  
+  .top {
+  
+    animation: myanimation;
+    animation-duration: 8s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    height: 100px;
+   
+   
+  }
+  
+  @keyframes myanimation {
+    0% {
+      left: 0;
+      transform: translateX(-130%)
+    }
+    100% {
+      left: 100%;
+      transform: translateX(130%)
+    }
+  }
+  
+  
+  
+  
+  
   

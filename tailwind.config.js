@@ -11,12 +11,15 @@ export default {
         'width': 'width',
       },
       transitionDuration: {
-        '1000': '1000ms',
+        '500': '1000ms',
       },
       transitionTimingFunction: {
         'in-out': 'cubic-bezier(0.4, 0, 0.2, 1)',
       },
+      
     },
   },
+  
   plugins: [],
+  
 }
