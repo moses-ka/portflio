@@ -10,8 +10,9 @@ const PortfolioPage = () => {
     // const illustrationElement = document.querySelector('.illustration-container');
     // Add a delay before adding the animation classes
     setTimeout(() => {
-      introduction.current?.classList.add('translate-x-0', 'transition-transform', 'duration-1000', 'ease-in-out');
-      illustration.current?.classList.add('-translate-x-1', 'transition-transform', 'duration-1000', 'ease-in-out');
+      introduction.current?.classList?.add('translate-x-0', 'transition-transform', 'duration-1000', 'ease-in-out');
+      illustration.current?.classList?.add('-translate-x-0', 'transition-transform', 'duration-1000', 'ease-in-out');
+      illustration.current?.classList?.remove('translate-x-full')
     }, 100); // Adjust the delay as needed
   }, []);
 
@@ -25,7 +26,7 @@ const PortfolioPage = () => {
       </span>
 
       </div>
-      <div ref={illustration} className="transform translate-x-full illustration-container h1/2 md:w-1/2 ">
+      <div ref={illustration} className="transform translate-x-full text-container flex flex-col justify-center items-center text-center h-1/2 md:w-1/2 ">
         <img className='' src="https://imgtr.ee/images/2023/09/22/a10a26fc5f5e4f7b8157aa23c8208d13.gif" alt="Vector Illustration" />
       </div>
     </div>
