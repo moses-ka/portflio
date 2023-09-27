@@ -29,14 +29,14 @@ export default function Projects() {
 
 // console.log(projects);
  return (
-     <section id='projects' className=' mt-6'>
-         <div className='flex flex-col justify-center items-center md:flex-row gap-4'>
+     <section id='projects' className=' mt-6 p-6'>
+         <div className='flex flex-col justify-center items-center md:flex-row gap-4 drop-shadow-md'>
              {projects && projects.map((project) => {
                  return (
-                     <div id='card' className=" w-[340px] md:w-[400px]  h-[600px] flex flex-col justify-center items-center gap-6 bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
-                         <img className="rounded-t-lg h-96 mb-4" src={project.photo} alt="" />
+                     <div id='card' className=" w-[300px] md:w-[400px] lg:w-[400px]  h-[600px] flex flex-col justify-center items-center gap-6 bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
+                         <img className="rounded-t-lg h-96 mb-4" src={project.photo} alt=" project img" />
                          <div className="p-4  h-full flex flex-col justify-center items-center">
-                             <h5 className="p-4 h-18 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">{project.name}</h5>
+                             <h5 className="p-4 h-18 text-2xl font-bold tracking-tight text-center text-gray-900 dark:text-white">{project.name}</h5>
                              <p className="mb-2  h-56 p-2 font-normal text-gray-700 dark:text-gray-400">{project.description}</p>
                              <a href={project.url} className="inline-flex items-center 
                              p-2 text-sm font-medium text-center text-white bg-purple-700
@@ -47,6 +47,7 @@ export default function Projects() {
                                  </svg>
                              </a>
                          </div>
+                         
                      </div>
                  )
              })}

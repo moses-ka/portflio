@@ -40,8 +40,8 @@ export default function NavBar() {
                                 </a>
                             </li>
                             <li>
-                                <a href="#skills" className="block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-purple-800 md:p-0 dark:text-white md:dark:hover:text-purple-500 dark:hover:bg-gray-800 dark:hover:text-white md:dark:hover:bg-transparent">
-                                    Services
+                                <a href="#projects" className="block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-purple-800 md:p-0 dark:text-white md:dark:hover:text-purple-500 dark:hover:bg-gray-800 dark:hover:text-white md:dark:hover:bg-transparent">
+                                   Projects
                                 </a>
                             </li>
                            
