@@ -1,9 +1,9 @@
-import React, { useEffect,useRef } from 'react';
+import  { useEffect,useRef } from 'react';
 import TypingEffect from './typing';
 
 const PortfolioPage = () => {
-  const illustration = useRef(null);
-  const introduction = useRef(null);
+  const illustration = useRef<HTMLDivElement | null>(null);
+  const introduction = useRef<HTMLDivElement | null>(null);
   useEffect(() => {
     // Use JavaScript to add transition classes after the component mounts
     // const textElement = document.querySelector('.text-container');
