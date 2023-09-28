@@ -36,13 +36,13 @@ export default function Projects() {
   }
 
   return (
-    <section id='projects' className=' mt-6 p-6 dark:bg-gray-800 dark:text-gray-200'>
+    <section id='projects' className=' mt-6 p-6 dark:bg-gray-900 dark:text-gray-200'>
       <div className='flex flex-col justify-center items-center md:flex-row gap-4 drop-shadow-md'>
         {projects.map((project) => (
           <div
             key={project.id}
             id='card'
-            className="w-[300px] md:w-[400px] lg:w-[400px]  h-[600px] flex flex-col justify-center items-center gap-6 bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700"
+            className="w-[300px] md:w-[400px] lg:w-[400px]  h-[600px] flex flex-col justify-center items-center gap-6 bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-900 dark:border-gray-700"
           >
             <img
               className="rounded-t-lg h-96 mb-4"
