@@ -1,6 +1,15 @@
 // import React from 'react';
-
+import  { useEffect,useRef } from 'react';
 export default function AboutMe() {
+  const introduction = useRef <HTMLDivElement | null>(null);
+  useEffect(() => {
+
+    setTimeout(() => {
+     
+      introduction.current?.classList?.add('translate-x-0', 'transition-transform', 'duration-1000', 'ease-in-out');
+    
+    }, 100); // Adjust the delay as needed
+  }, []);
   return (
     <>
       <section id="about-me" className="h-full overflow-hidden mt-4 dark:bg-gray-900 dark:text-gray-200">
@@ -13,8 +22,8 @@ export default function AboutMe() {
               Express, and I'm well-versed in SQL and MongoDB. Learning is my superpower, and I'm always eager to expand
              my  <strong className='text-purple-700'>knowledge.</strong> Let's connect and create something extraordinary together.
             </p>
-          <div className=' flex justify-center items-center '>
-            <img className='w-5/6' src="https://pkhdfkdxmhhrvkxglbhv.supabase.co/storage/v1/object/public/photos/Code%20typing-rafiki%20(1).png?t=2023-09-28T18%3A48%3A49.023Z" alt="coding illustration" />
+          <div  ref={introduction} className=' flex justify-center items-center transform -translate-x-full text-container'>
+            <img  className='w-4/6 ' src="https://pkhdfkdxmhhrvkxglbhv.supabase.co/storage/v1/object/public/photos/Code%20typing-rafiki%20(1).png?t=2023-09-28T18%3A48%3A49.023Z" alt="coding illustration" />
           </div>
           </div>
           <div className="flex-col justify-center items-center text-center    ">

@@ -45,7 +45,7 @@ export default function Projects() {
             className="w-[300px] md:w-[400px] lg:w-[400px]  h-[600px] flex flex-col justify-center items-center gap-6 bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-900 dark:border-gray-700"
           >
             <img
-              className="rounded-t-lg h-96 mb-4"
+              className="rounded-t-lg w-fit h-fit mb-4"
               src={project.photo}
               alt={project.name}
             />

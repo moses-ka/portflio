@@ -18,7 +18,7 @@ const PortfolioPage = () => {
 
   return (
     <section id='hero-section' className='h-full overflow-hidden mt-4 dark:bg-gray-900 dark:text-gray-200 p-6'>
-    <div className=" flex flex-col justify-evenly items-center p-6 md:flex-row">
+    <div className=" flex flex-col justify-center items-center p-6 md:flex-row">
       <div ref={introduction} className="transform -translate-x-full text-container flex flex-col justify-center items-center text-center h-1/2 md:w-1/2 ">
         <TypingEffect />
     <span className="text-lg mt-2 md:w-4/6 ">
@@ -27,7 +27,7 @@ const PortfolioPage = () => {
 
       </div>
       <div ref={illustration} className="transform translate-x-full text-container flex flex-col justify-center items-center text-center h-1/2 md:w-1/2 ">
-        <img className='' src="https://pkhdfkdxmhhrvkxglbhv.supabase.co/storage/v1/object/public/photos/Application%20programming%20interface-rafiki.png?t=2023-09-28T18%3A51%3A02.970Z" alt="Vector Illustration" />
+        <img className='w-full md:w-5/6' src="https://pkhdfkdxmhhrvkxglbhv.supabase.co/storage/v1/object/public/photos/Application%20programming%20interface-cuate.png" alt="Vector Illustration" />
       </div>
     </div>
     </section>
