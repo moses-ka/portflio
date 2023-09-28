@@ -17,11 +17,11 @@ const PortfolioPage = () => {
   }, []);
 
   return (
-    <section id='hero-section' className='h-full overflow-hidden mt-4 dark:bg-gray-900 dark:text-gray-200'>
+    <section id='hero-section' className='h-full overflow-hidden mt-4 dark:bg-gray-900 dark:text-gray-200 p-6'>
     <div className=" flex flex-col justify-evenly items-center p-6 md:flex-row">
       <div ref={introduction} className="transform -translate-x-full text-container flex flex-col justify-center items-center text-center h-1/2 md:w-1/2 ">
         <TypingEffect />
-    <span className="text-sm mt-2 md:w-4/6 ">
+    <span className="text-lg mt-2 md:w-4/6 ">
       I'm all about the web,  and delightful user experiences! As a web developer, I turn ideas into digital <strong>magic</strong>. I enjoy every <strong>pixel</strong>, line of code, and the thrill of seeing projects come to <strong>life</strong>
       </span>
 

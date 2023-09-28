@@ -22,7 +22,7 @@ const TypingEffect = () => {
 
   return (
     <div className="text-center mt-4 md:w-4/6 ">
-      <h1 className="text-2xl font-bold text-purple-700">{typedText}</h1>
+      <h2 className="text-3xl font-bold text-purple-700">{typedText}</h2>
     </div>
   );
 };
