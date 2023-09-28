@@ -17,7 +17,7 @@ const PortfolioPage = () => {
   }, []);
 
   return (
-    <section id='hero-section' className='h-full overflow-hidden mt-4'>
+    <section id='hero-section' className='h-full overflow-hidden mt-4 dark:bg-gray-800 dark:text-gray-200'>
     <div className=" flex flex-col justify-evenly items-center p-6 md:flex-row">
       <div ref={introduction} className="transform -translate-x-full text-container flex flex-col justify-center items-center text-center h-1/2 md:w-1/2 ">
         <TypingEffect />

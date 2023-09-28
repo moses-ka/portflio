@@ -3,7 +3,7 @@
 export default function AboutMe() {
   return (
     <>
-      <section id="about-me" className="h-full overflow-hidden mt-4">
+      <section id="about-me" className="h-full overflow-hidden mt-4 dark:bg-gray-800 dark:text-gray-200">
         <div className="flex flex-col justify-end items-center p-4">
           <div className="flex flex-col justify-center items-center text-center  space-y-6">
             <h2 className="text-xl font-bold">About me</h2>
