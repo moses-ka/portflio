@@ -1,7 +1,7 @@
 import  { useState, useEffect } from 'react';
 
 const TypingEffect = () => {
-  const textToType = "Hello, I'm Aljumaili Moses. full-stack developer and Design Enthusiast";
+  const textToType = "Hello, I'm Aljumaili Moses  full-stack developer and Design Enthusiast";
   const [typedText, setTypedText] = useState('');
   const [currentIndex, setCurrentIndex] = useState(0);
 
@@ -21,8 +21,8 @@ const TypingEffect = () => {
   }, [currentIndex]);
 
   return (
-    <div className="text-center mt-4 md:w-4/6 ">
-      <h2 className="text-3xl font-bold text-purple-700">{typedText}</h2>
+    <div className="text-center text- mt-4 w-full md:w-5/6 ">
+      <h2 className="text-2xl font-bold w-full   text-purple-700">{typedText}</h2>
     </div>
   );
 };
