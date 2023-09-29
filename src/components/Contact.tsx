@@ -51,7 +51,7 @@ export default function Contact() {
     </section>
     <section id='footer'>
       
-<footer className="bg-white dark:bg-gray-900 p-6">
+<footer className="bg-white dark:bg-gray-900 p-6 dark:text-gray-200">
     <div className=" w-full ">
         <div className="flex flex-col justify-center md:justify-between md:flex-row items-center">
       <div className='flex flex-col justify-center items-center gap-2 text-center'>
