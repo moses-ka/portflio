@@ -18,7 +18,7 @@ export default function Contact() {
   };
   return (
     <>
-    <section id='contact' className='h-full overflow-hidden mt-4 p-6'>
+    <section id='contact' className='h-full overflow-hidden mt-4 p-6 dark:bg-gray-900 dark:text-gray-200'>
       <div className='flex flex-col justify-center items-center '>
       
 <form ref={form} onSubmit={sendEmail} className="w-full md:w-5/6">
