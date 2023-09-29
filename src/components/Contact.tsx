@@ -8,7 +8,7 @@ export default function Contact() {
   
     if (form.current) {
       emailjs.sendForm('service_wp9iwbd', 'template_mcr4zhc', form.current, 'Vf_kZW2iWy8ca97Hb')
-        .then((result) => {
+        .then(() => {
         window.alert('Message Sent')
         }, (error) => {
           console.log(error.text);
