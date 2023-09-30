@@ -11,16 +11,14 @@ function App() {
   return (
     <>
     <div className='dark:bg-gray-900'>
-
-    
     <NavBar />
     <PortfolioPage />
     <Aboutme />
     <Projects />
     <Contact />
-    </div>
-    </>
-  )
+</div>
+</>
+)
 }
 
 export default App
