@@ -53,26 +53,26 @@ export default function Contact() {
       
 <footer className="bg-white dark:bg-gray-900 p-6 dark:text-gray-200">
     <div className=" w-full ">
-        <div className="flex flex-col justify-center md:justify-between md:flex-row items-center gap-4 px-8">
-      <div className='flex flex-col justify-center items-center gap-2 text-center p-2'>
+        <div className="flex flex-col justify-center md:justify-center md:flex-row items-center gap-4 px-2">
+      <div className='flex flex-col justify-center items-center gap-2 text-center p-2 md:w-1/2'>
         Logo
       </div>
-          <div className="flex justify-center items-center gap-4  h-36">
-              <div className='flex flex-col justify-center items-center gap-2 text-center  h-28 p-2 w-full'>
+          <div className="flex justify-center items-center gap-4  h-36 md:w-1/2">
+              <div className='flex flex-col justify-center items-center gap-2 text-center  h-28 p-2 w-1/2'>
                   <h2 className=" text-sm font-semibold text-gray-900 uppercase dark:text-white mb-2">Resources</h2>
                   <ul className="text-gray-500 dark:text-gray-400 font-medium">
                       <li className="">
                           <a href="https://flowbite.com/" className="hover:underline">Flowbite</a>
                       </li>
                       <li>
-                          <a href="https://tailwindcss.com/" className="hover:underline">Tailwind</a>
-                      </li>
-                      <li>
                           <a href="https://storyset.com/" className="hover:underline">Storyset</a>
+                      </li>
+                      <li className='w-full'>
+                          <a href="https://tailwindcss.com/" className="hover:underline">Tailwind Css</a>
                       </li>
                   </ul>
               </div>
-              <div className='flex flex-col justify-center items-center gap-2 text-center h-28 p-2 w-full'>
+              <div className='flex flex-col justify-center items-center gap-2 text-center h-28 p-2 w-1/2'>
                   <h2 className=" text-sm font-semibold text-gray-900 uppercase dark:text-white mb-2">Follow me</h2>
                   <ul className="text-gray-500 dark:text-gray-400 font-medium">
                       <li className="">
