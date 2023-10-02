@@ -1,5 +1,5 @@
 import { useState } from 'react'
-
+import {CiDark} from 'react-icons/ci'
 export default function NavBar() {
     const [show, setShow] = useState(false)
 
@@ -13,7 +13,10 @@ export default function NavBar() {
         <>
             <nav className="bg-white border-gray-200 dark:bg-gray-900">
                 <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-6">
-                    <span></span>
+                    <img className='w-20 ' src="https://pkhdfkdxmhhrvkxglbhv.supabase.co/storage/v1/object/public/photos/logo%20black.png" alt="logo" />
+                  
+                    
+
                     <button
                         onClick={toggle}
                        className="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-800 dark:focus:ring-gray-600"
@@ -23,12 +26,17 @@ export default function NavBar() {
                             <path stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M1 1h15M1 7h15M1 13h15" />
                         </svg>
                     </button>
+                         
+
                     <div className={show ? "flex w-full md:block md:w-auto" : "hidden md:flex  " } id="navbar-default">
                         <ul className="font-medium flex flex-col
                          p-4 md:p-0 mt-4 border border-gray-100 rounded-lg
                           bg-gray-50 md:flex-row md:space-x-8 md:mt-0 md:border-0
                            md:bg-white dark:bg-gray-900 md:dark:bg-gray-900
                             dark:border-gray-800 w-full">
+                            <li className='m-4 md:m-0 dark:text-white'>
+                                <CiDark className="w-6 h-6" />         
+                            </li>
                             <li>
                                 <a href="#hero-section" className="block py-2 pl-3 pr-4 text-white bg-purple-800 rounded md:bg-transparent md:text-purple-800 md:p-0 dark:text-white md:dark:text-purple-500" aria-current="page">
                                     Home
@@ -52,7 +60,9 @@ export default function NavBar() {
                             </li>
                         </ul>
                     </div>
+                    
                 </div>
+                
             </nav>
         </>
     )

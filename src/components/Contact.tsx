@@ -55,7 +55,8 @@ export default function Contact() {
     <div className=" w-full ">
         <div className="flex flex-col justify-center md:justify-center md:flex-row items-center gap-4 px-2">
       <div className='flex flex-col justify-center items-center gap-2 text-center p-2 md:w-1/2'>
-        Logo
+      <img className='w-36 ' src="https://pkhdfkdxmhhrvkxglbhv.supabase.co/storage/v1/object/public/photos/logo%20black.png" alt="logo" />
+
       </div>
           <div className="flex justify-center items-center gap-4  h-36 md:w-1/2">
               <div className='flex flex-col justify-center items-center gap-2 text-center  h-28 p-2 w-1/2'>
