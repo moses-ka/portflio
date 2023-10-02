@@ -36,7 +36,7 @@ export default function Projects() {
   }
 
   return (
-    <section id='projects' className=' mt-6 p-6 dark:bg-dark dark:text-gray-200 text-center'>
+    <section id='projects' className=' mt-6 p-6 dark:bg-gray-900 dark:text-gray-200 text-center'>
       <h2 className="text-2xl font-bold w-full mb-6">My Projects</h2>
       <div className='flex flex-col justify-center items-center md:flex-row gap-4 drop-shadow-md'>
         {projects.map((project) => (
