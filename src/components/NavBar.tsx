@@ -1,14 +1,33 @@
-import { useState } from 'react'
+import { useState,useEffect  } from 'react'
 import {CiDark} from 'react-icons/ci'
 export default function NavBar() {
-    const [show, setShow] = useState(false)
-
+    const [show, setShow] = useState(false);
+    const [darkMode, setDarkMode] = useState(false);
+  
+    useEffect(() => {
+      const storedDarkMode = JSON.parse(localStorage.getItem('darkMode') || 'false');
+      setDarkMode(storedDarkMode);
+    }, []);
+  
+    useEffect(() => {
+      if (darkMode) {
+        document.documentElement.classList.add('dark');
+      } else {
+        document.documentElement.classList.remove('dark');
+      }
+      // Update local storage
+      localStorage.setItem('darkMode', JSON.stringify(darkMode));
+    }, [darkMode]);
+  
+    const nightMode = () => {
+      setDarkMode((prevDarkMode) => !prevDarkMode);
+    };
+  
     const toggle = () => {
-        setShow(!show)
-        console.log(show)
-        return show
-    }
-
+      setShow(!show);
+    };
+  
+console.log(darkMode , 'mode is ')
     return (
         <>
             <nav className="bg-white border-gray-200 dark:bg-gray-900">
@@ -34,8 +53,8 @@ export default function NavBar() {
                           bg-gray-50 md:flex-row md:space-x-8 md:mt-0 md:border-0
                            md:bg-white dark:bg-gray-900 md:dark:bg-gray-900
                             dark:border-gray-800 w-full">
-                            <li className='m-4 md:m-0 dark:text-white'>
-                                <CiDark className="w-6 h-6" />         
+                            <li   className='m-4 md:m-0 dark:text-white hover:scale-105 md:hover:scale-125 duration-500  '>
+                                <CiDark onClick={nightMode} className="w-6 h-6" />         
                             </li>
                             <li>
                                 <a href="#hero-section" className="block py-2 pl-3 pr-4 text-white bg-purple-800 rounded md:bg-transparent md:text-purple-800 md:p-0 dark:text-white md:dark:text-purple-500" aria-current="page">

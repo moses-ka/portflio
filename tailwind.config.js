@@ -10,19 +10,12 @@ export default {
   theme: {
     extend: {
       // Add custom transition classes
-      transitionProperty: {
-        'width': 'width',
+    
+      backgroundColor: {
+        'dark': '#121212',
       },
-      transitionDuration: {
-        '500': '1000ms',
-      },
-      transitionTimingFunction: {
-        'in-out': 'cubic-bezier(0.4, 0, 0.2, 1)',
-      },
-      
     },
   },
-  
+  darkMode: 'class',
   plugins: [],
-  
 }
