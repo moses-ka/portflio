@@ -23,10 +23,4 @@ While working on this portfolio project, I gained valuable insights and skills, 
 
 
 
-## Acknowledgments
 
-I want to express my gratitude to the online tutorials and resources that helped me acquire the knowledge and skills needed to complete this project.
-
----
-
-*Note: This README is intended to provide project details and document what you learned during its development.*
