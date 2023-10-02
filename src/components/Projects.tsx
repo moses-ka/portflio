@@ -40,7 +40,7 @@ export default function Projects() {
   return (
     <section id='projects' className=' mt-6 p-6 dark:bg-dark dark:text-gray-200 text-center'>
       <h2 className="text-2xl font-bold w-full mb-6">My Projects</h2>
-      <div className='flex flex-col justify-center items-center md:flex-row gap-4 drop-shadow-md  '>
+      <div className='flex flex-col justify-center items-center md:flex-row gap-6 drop-shadow-md  '>
         {projects.map((project) => (
           <div
             key={project.id}
@@ -66,7 +66,7 @@ export default function Projects() {
                 href={project.url}
                 className="inline-flex items-center p-2 text-sm font-medium text-center text-white bg-purple-700 rounded-lg  hover:bg-purple-800 focus:ring-4 focus:outline-none focus:ring-purple-300 duration-500 dark:bg-purple-600 dark:hover:bg-purple-700 dark:focus:ring-purple-800"
               >
-                Read more
+                Git Hub
                 <svg className="w-4 h-4 ml-2" aria-label="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
                   <path stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M1 5h12m0 0L9 1m4 4L9 9"/>
                 </svg>

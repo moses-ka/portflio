@@ -34,7 +34,7 @@ export default function Footer() {
                       </li>
 
                       <li>
-                          <a href="https://www.linkedin.com/in/moses-ka-989b1819a/" className="hover:underline">Linkedin</a>
+                          <a href="https://www.linkedin.com/in/moses-ka-mohs/" className="hover:underline">Linkedin</a>
                       </li>
                       <li>
                           <span  className=" text-center text-sm  ">ji.moses.ka@gmail.com</span>
