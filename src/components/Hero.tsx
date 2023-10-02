@@ -17,15 +17,15 @@ const PortfolioPage = () => {
   }, []);
 
   return (
-    <section id='hero-section' className='h-full overflow-hidden mt-4 dark:bg-gray-900 dark:text-gray-200 p-6 text-center'>
+    <section id='hero-section' className='h-full overflow-hidden mt-4 dark:bg-dark dark:text-gray-200 p-6 text-center'>
     <div className=" flex flex-col justify-center items-center  md:flex-row">
       <div ref={introduction} className="transform -translate-x-full text-container flex flex-col justify-center items-center text-center h-1/2 md:w-1/2 ">
         <TypingEffect />
     <span className="text-lg mt-2 w-5/6 md:w-4/6 ">
       I'm all about the web  and delightful user experiences! <br /> As a web developer
-       I turn ideas into digital <strong className='text-purple-700'>magic</strong>. I enjoy every,
-       <strong className='text-purple-700'>pixel</strong> line of code, 
-       and the thrill of seeing projects come to <strong className='text-purple-700'>life</strong>
+       I turn ideas into digital <strong className='text-purple-700 dark:text-purple-400'>magic ,</strong> I enjoy every 
+       <strong className='text-purple-700 dark:text-purple-400'> pixel ,</strong> line of code, 
+       and the thrill of seeing projects come to <strong className='text-purple-700 dark:text-purple-400'>life</strong>
       </span>
 
       </div>

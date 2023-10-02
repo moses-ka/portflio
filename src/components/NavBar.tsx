@@ -1,9 +1,12 @@
 import { useState,useEffect  } from 'react'
 import {CiDark} from 'react-icons/ci'
+
+
 export default function NavBar() {
     const [show, setShow] = useState(false);
     const [darkMode, setDarkMode] = useState(false);
   
+    
     useEffect(() => {
       const storedDarkMode = JSON.parse(localStorage.getItem('darkMode') || 'false');
       setDarkMode(storedDarkMode);
@@ -30,9 +33,12 @@ export default function NavBar() {
 console.log(darkMode , 'mode is ')
     return (
         <>
-            <nav className="bg-white border-gray-200 dark:bg-gray-900">
+            <nav className="bg-white border-gray-200 dark:bg-dark">
                 <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-6">
-                    <img className='w-20 ' src="https://pkhdfkdxmhhrvkxglbhv.supabase.co/storage/v1/object/public/photos/logo%20black.png" alt="logo" />
+                <img className='w-28 dark:invert ' src="https://pkhdfkdxmhhrvkxglbhv.supabase.co/storage/v1/object/public/photos/logo%20black.png?t=2023-10-02T11%3A57%3A04.586Z" alt="logo" />
+
+                  
+                   
                   
                     
 
@@ -51,7 +57,7 @@ console.log(darkMode , 'mode is ')
                         <ul className="font-medium flex flex-col
                          p-4 md:p-0 mt-4 border border-gray-100 rounded-lg
                           bg-gray-50 md:flex-row md:space-x-8 md:mt-0 md:border-0
-                           md:bg-white dark:bg-gray-900 md:dark:bg-gray-900
+                           md:bg-white dark:bg-dark md:dark:bg-dark
                             dark:border-gray-800 w-full">
                             <li   className='m-4 md:m-0 dark:text-white hover:scale-105 md:hover:scale-125 duration-500  '>
                                 <CiDark onClick={nightMode} className="w-6 h-6" />         

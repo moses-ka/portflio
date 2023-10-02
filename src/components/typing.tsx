@@ -21,8 +21,8 @@ const TypingEffect = () => {
   }, [currentIndex]);
 
   return (
-    <div className="text-center text- mt-4 w-full md:w-5/6 ">
-      <h2 className="text-2xl font-bold w-full   text-purple-700">{typedText}</h2>
+    <div className="text-center text- mt-4 w-full md:w-5/6   text-purple-700  dark:text-purple-400 ">
+      <h2 className="text-2xl font-bold w-full  ">{typedText}</h2>
     </div>
   );
 };

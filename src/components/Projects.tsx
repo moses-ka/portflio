@@ -1,7 +1,7 @@
 // import React from 'react';
 import { createClient } from "@supabase/supabase-js";
 import { useQuery } from '@tanstack/react-query';
-
+import {AiOutlineLoading} from 'react-icons/ai'
 type Project = {
   id: number;
   name: string;
@@ -28,7 +28,9 @@ export default function Projects() {
   );
 
   if (isLoading) {
-    return <div>Loading...</div>;
+    return <div className="flex justify-center items-center ">
+    <AiOutlineLoading className="animate-spin w-10 h-10" />
+    </div>;
   }
 
   if (isError) {
@@ -36,26 +38,33 @@ export default function Projects() {
   }
 
   return (
-    <section id='projects' className=' mt-6 p-6 dark:bg-gray-900 dark:text-gray-200 text-center'>
+    <section id='projects' className=' mt-6 p-6 dark:bg-dark dark:text-gray-200 text-center'>
       <h2 className="text-2xl font-bold w-full mb-6">My Projects</h2>
-      <div className='flex flex-col justify-center items-center md:flex-row gap-4 drop-shadow-md'>
+      <div className='flex flex-col justify-center items-center md:flex-row gap-4 drop-shadow-md  '>
         {projects.map((project) => (
           <div
             key={project.id}
             id='card'
-            className="w-[300px] md:w-[400px] lg:w-[400px]  h-[600px] flex flex-col justify-center items-center gap-6 bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-900 dark:border-gray-700"
+            className="w-[300px] 
+            md:w-[400px] lg:w-[400px]
+              h-[600px] flex flex-col justify-center items-center gap-6
+               bg-white  rounded-lg  dark:bg-dark
+               dark:shadow-[0_0_8px_#fff,inset_0_0_4px_#fff,4px_4px_12px_#A94CFF,0_0_20px_#A94CFF,0_0_40px_#A94CFF]
+                drop-shadow-md
+                border border-neon-purple
+                "
           >
             <img
               className="rounded-t-lg w-fit h-fit mb-4"
               src={project.photo}
               alt={project.name}
             />
-            <div className="p-4  h-full flex flex-col justify-center items-center ">
-              <h5 className="p-4 h-18 text-2xl font-bold tracking-tight text-center text-gray-900 dark:text-white">{project.name}</h5>
-              <p className="mb-2  h-56 p-2 font-normal text-gray-700 dark:text-gray-400">{project.description}</p>
+            <div className="p-4  h-full flex flex-col justify-center items-center    ">
+              <h5 className="p-4 h-18 text-2xl font-bold tracking-tight text-center text-gray-900 dark:text-white ">{project.name}</h5>
+              <p className="mb-2  h-56 p-2 font-normal text-gray-700 dark:text-gray-200">{project.description}</p>
               <a
                 href={project.url}
-                className="inline-flex items-center p-2 text-sm font-medium text-center text-white bg-purple-700 rounded-lg hover:bg-purple-800 focus:ring-4 focus:outline-none focus:ring-purple-300 dark:bg-purple-600 dark:hover:bg-purple-700 dark:focus:ring-purple-800"
+                className="inline-flex items-center p-2 text-sm font-medium text-center text-white bg-purple-700 rounded-lg  hover:bg-purple-800 focus:ring-4 focus:outline-none focus:ring-purple-300 duration-500 dark:bg-purple-600 dark:hover:bg-purple-700 dark:focus:ring-purple-800"
               >
                 Read more
                 <svg className="w-4 h-4 ml-2" aria-label="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">

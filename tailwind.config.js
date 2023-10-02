@@ -9,10 +9,19 @@ export default {
   ],
   theme: {
     extend: {
-      // Add custom transition classes
-    
       backgroundColor: {
-        'dark': '#121212',
+        'dark': '#09001E',
+      },
+      borderColor: {
+        'neon-purple': '#A94CFF',
+        'neon-pink': '#FF6BAC',
+      },
+      borderWidth: {
+        'neon': '4px',
+      },
+      boxShadow: {
+        'neon-purple': '0 0 10px #A94CFF', // Purple neon drop shadow
+        'neon-pink': '0 0 10px #FF6BAC',    // Pink neon drop shadow
       },
     },
   },
