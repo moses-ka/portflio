@@ -22,7 +22,7 @@ export default function Footer() {
                           <a href="https://storyset.com/" className="hover:underline">Storyset</a>
                       </li>
                       <li className='w-full'>
-                          <a href="https://tailwindcss.com/" className="hover:underline">Tailwind Css</a>
+                          <a href="https://tailwindcss.com/" className="hover:underline">Tailwind CSS</a>
                       </li>
                   </ul>
               </div>
@@ -30,11 +30,11 @@ export default function Footer() {
                   <h2 className=" text-sm font-semibold text-gray-900 uppercase dark:text-white mb-2">Follow me</h2>
                   <ul className="text-gray-500 dark:text-gray-400 font-medium">
                       <li className="">
-                          <a href="https://github.com/moses-ka" className="hover:underline ">Github</a>
+                          <a href="https://github.com/moses-ka" className="hover:underline ">GitHub</a>
                       </li>
 
                       <li>
-                          <a href="https://www.linkedin.com/in/moses-ka-mohs/" className="hover:underline">Linkedin</a>
+                          <a href="https://www.linkedin.com/in/moses-ka-mohs/" className="hover:underline">LinkedIn</a>
                       </li>
                       <li>
                           <span  className=" text-center text-sm  ">ji.moses.ka@gmail.com</span>

@@ -49,7 +49,7 @@ export default function Projects() {
             md:w-[400px] lg:w-[400px]
               h-[600px] flex flex-col justify-center items-center gap-6
                bg-white  rounded-lg  dark:bg-dark
-               dark:shadow-[0_0_8px_#fff,inset_0_0_4px_#fff,4px_4px_12px_#A94CFF,0_0_20px_#A94CFF,0_0_40px_#A94CFF]
+               dark:shadow-[0_0_2px_#fff,inset_0_0_2px_#fff,4px_4px_8px_#A94CFF,0_0_10px_#A94CFF,0_0_40px_#A94CFF]
                 drop-shadow-md
                 border border-neon-purple
                 "
@@ -66,7 +66,7 @@ export default function Projects() {
                 href={project.url}
                 className="inline-flex items-center p-2 text-sm font-medium text-center text-white bg-purple-700 rounded-lg  hover:bg-purple-800 focus:ring-4 focus:outline-none focus:ring-purple-300 duration-500 dark:bg-purple-600 dark:hover:bg-purple-700 dark:focus:ring-purple-800"
               >
-                Git Hub
+                GitHub
                 <svg className="w-4 h-4 ml-2" aria-label="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
                   <path stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M1 5h12m0 0L9 1m4 4L9 9"/>
                 </svg>

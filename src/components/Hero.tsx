@@ -23,9 +23,9 @@ const PortfolioPage = () => {
         <TypingEffect />
     <span className="text-lg mt-2 w-5/6 md:w-4/6 ">
       I'm all about the web  and delightful user experiences! <br /> As a web developer
-       I turn ideas into digital <strong className='text-purple-700 dark:text-purple-400'>magic ,</strong> I enjoy every 
-       <strong className='text-purple-700 dark:text-purple-400'> pixel ,</strong> line of code, 
-       and the thrill of seeing projects come to <strong className='text-purple-700 dark:text-purple-400'>life</strong>
+       I turn ideas into digital <strong className='text-purple-700 dark:text-purple-400'>magic  ,</strong> I enjoy every 
+       <strong className='text-purple-700 dark:text-purple-400'> pixel  ,</strong> line of code, 
+       and the thrill of seeing projects come to <strong className='text-purple-700 dark:text-purple-400'>life .</strong>
       </span>
 
       </div>
