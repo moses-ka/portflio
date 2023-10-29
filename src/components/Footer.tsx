@@ -71,7 +71,7 @@ export default function Footer() {
                   </svg>
                   
                   </a>
-                  <span className=' text-center text-sm'>Moses<span className='hidden md:inline '>(Aljumaili)</span>Ka</span>
+                  <span className=' text-center text-sm'>Moses Aljumaili</span>
           </div>
       </div>
     </div>
