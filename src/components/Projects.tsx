@@ -36,7 +36,7 @@ export default function Projects() {
   if (isError) {
     return <div>Error fetching data</div>;
   }
-
+  
   return (
     <section id='projects' className=' mt-6 p-6 dark:bg-dark dark:text-gray-200 text-center'>
       <h2 className="text-2xl font-bold w-full mb-6">My Projects</h2>

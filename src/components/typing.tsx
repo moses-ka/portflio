@@ -1,7 +1,7 @@
 import  { useState, useEffect } from 'react';
 
 const TypingEffect = () => {
-  const textToType = "Hello, I'm Aljumaili Moses  full-stack developer and Design Enthusiast";
+  const textToType = "Hello, I'm Moses Aljumaili junior full-stack developer";
   const [typedText, setTypedText] = useState('');
   const [currentIndex, setCurrentIndex] = useState(0);
 

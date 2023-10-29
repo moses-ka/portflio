@@ -18,7 +18,7 @@ export default function AboutMe() {
           <div className="flex flex-col justify-center items-center text-center  space-y-6 text-xl">
             <h2 className="text-2xl font-bold">About Me</h2>
             <p className='w-5/6 '>
-              Hello, I'm Aljumaili Moses, <br /> a<strong className='text-purple-700 dark:text-purple-400'> full-stack developer</strong> with a background in design and art . I thrive on
+              Hello, I'm Moses Aljumaili , <br /> a<strong className='text-purple-700 dark:text-purple-400'> full-stack developer</strong> with a background in design and art . I thrive on
               collaboration and enjoy crafting beautiful user interfaces . My toolkit includes <strong > React, Node.js, and
               Express, and I'm well-versed in SQL and MongoDB  .</strong> Learning is my superpower, and I'm always eager to expand
              my  <strong className='text-purple-700 dark:text-purple-400'>knowledge .</strong> Let's connect and create something extraordinary together.
